@@ -133,6 +133,7 @@
 @media screen and (max-width : 564px) {
     .iconsList p {
         width: 10em;
+        opacity: 1;
     }
 
     .father h2 {
@@ -140,7 +141,7 @@
     }
 
     .father {
-        width: 34em;
+        width: 100%;
         height: 100%;
         margin: 0 auto;
     }

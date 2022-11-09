@@ -32,7 +32,7 @@
     height: 5em;
     margin-left: 3em;
     animation: flutuacao 4s ease-in-out infinite;
-    border-radius: 50%;
+    border-radius: 50px;
 }
 
 @keyframes flutuacao {

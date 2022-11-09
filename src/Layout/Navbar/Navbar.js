@@ -6,6 +6,7 @@ import {BsGrid3X3GapFill} from 'react-icons/bs'
 import {useEffect, useState} from 'react';
 import {SiGithub} from 'react-icons/si'
 import {FaLinkedin} from 'react-icons/fa'
+import image from '../../Images/perfil.jfif'
 
 function Navbar({page}) {
 
@@ -33,7 +34,7 @@ function Navbar({page}) {
         <nav className={styles.father}>
 
             <section className={styles.section_img}>
-                <img src={data.avatar_url} alt='foto de perfil'/>
+                <img src={image} alt='foto de perfil'/>
                 <div>
                     <h2>Valdir Castro</h2>
                     <p>Front-End Developer</p>
