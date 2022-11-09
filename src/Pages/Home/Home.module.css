@@ -1,0 +1,102 @@
+/*---------IMPORT FONTS--------------*/
+
+@font-face {
+    font-family: 'Nostromo Heavy';
+    src: local('Nostromo'), url("../../Fonts/NostromoRegular-Heavy.otf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Nostromo Bold';
+    src: local('Nostromo'), url("../../Fonts/NostromoRegular-Bold.otf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Nostromo Bold';
+    src: local('Nostromo'), url("../../Fonts/NostromoRegular-Medium.otf") format('truetype');
+}
+
+/*---------ROOT ELEMENTS--------------*/
+
+.father {
+    color: #FFF;
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.father div {
+    position: absolute;
+}
+
+/*---------IMAGE--------------*/
+
+.father img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/*---------BUTTON--------------*/
+
+.father button {
+    cursor: pointer;
+    margin-top: 3em;
+    height: 3em;
+    width: 18em;
+    border-radius: 0.5em;
+    border: none;
+    transition: 0.3s;
+    outline: 0;
+    font-family: 'Nostromo Bold', sans-serif;
+}
+
+.father button:hover {
+    background: #00f475;
+    color: #222;
+    font-weight: bolder;
+    outline: 0;
+    width: 20em;
+}
+
+/*---------TEXTS--------------*/
+
+.father h2 {
+    font-family: 'Nostromo Heavy';
+    width: 100%;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.father p {
+    font-family: 'Nostromo Medium';
+}
+
+.father span {
+    color: #00f475;
+}
+
+/*---------RESPONSIVITY--------------*/
+
+@media screen and (max-width: 482px) {
+    .father h2 {
+        font-size: 1.5em;
+    }
+
+    .father p {
+        font-size: 0.8em;
+    }
+
+    .father button {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-height: 1000px) {
+    .father {
+        height: 100vh;
+    }
+}

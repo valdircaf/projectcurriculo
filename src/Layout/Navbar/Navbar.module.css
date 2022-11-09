@@ -1,0 +1,127 @@
+/*----ROOT----*/
+
+.father {
+    background: #222;
+    width: 25em;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid rgba(0, 0, 0, .3);
+    height: 61.2em;
+}
+
+/*----IMAGE----*/
+
+.section_img {
+    display: flex;
+}
+
+.section_img div {
+    margin-top: 3em;
+    margin-left: 2em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.section_img h2 {
+    color: #00f475;
+    margin-right: 2em;
+    width: 7em;
+}
+
+.father img {
+    margin-top: 2.5em;
+    width: 5em;
+    height: 5em;
+    margin-left: 3em;
+    animation: flutuacao 4s ease-in-out infinite;
+    border-radius: 50%;
+}
+
+@keyframes flutuacao {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/*----UL----*/
+
+.list {
+    margin-top: 4em;
+}
+
+/*----LISTS----*/
+
+.items {
+    list-style: none;
+    margin-left: 1em;
+}
+
+.items .projects {
+    margin-left: 5.5em;
+}
+
+.items .home {
+    margin-left: 5.6em;
+}
+
+/*----BUTTON/COMPONENTS----*/
+
+.btn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: none;
+    width: 90%;
+    background: #222;
+    height: 5em;
+    transition: border 0.2s linear;
+}
+
+.btn svg {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5em;
+    margin-bottom: 0.2em;
+}
+
+.btn a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.2em;
+    margin-left: 5em;
+}
+
+.btn:hover {
+    border-top: 1px solid #00f475;
+    border-bottom: 1px solid #00f475;
+}
+
+.svg a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5em;
+    margin-right: 1em;
+}
+
+.svg {
+    display: flex;
+    justify-content: center;
+    margin-top: 30em;
+}
+
+.svg svg:hover {
+    color: #FFF;
+}
+
+@media screen and (max-width: 564px) {
+    .father {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .father {
+        display: none;
+    }
+}

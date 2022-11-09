@@ -1,0 +1,87 @@
+/*------IMPORT FONT-------*/
+
+@font-face {
+    font-family: 'Nostromo Medium', sans-serif;
+    src: url("../../Fonts/NostromoRegular-Medium.otf");
+}
+
+/*------LAYOUT CLOSED-------*/
+
+.fatherClosed {
+    background-color: rgba(255, 255 , 255, .5);
+    font-family: 'Nostromo Medium', sans-serif;
+    width: 0;
+    display: none;
+    transition: 0.2s linear;
+    color: #121212;
+}
+
+.options li {
+
+    list-style: none;
+}
+
+.options li a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.menu {
+    font-size: 2em;
+    color: #FFF;
+}
+.menu li {
+    list-style: none;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+/*------LAYOUT OPEN-------*/
+
+.father {
+    background: #121212;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: 0.5s linear;
+    position: absolute;
+    width: 100%;
+}
+
+.hamburguerOpen li {
+    color: #FFF;
+    font-size: 2em;
+    list-style: none;
+    margin-bottom: 2em;
+    margin-right: 1em;
+    transition: 0.5s linear;
+    cursor: pointer;
+}
+
+.menuOpen li {
+    list-style: none;
+    margin-bottom: 2em;
+    margin-right: 2em;
+    transition: 0.5s linear;
+
+}
+
+.menuOpen li a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Nostromo Medium', sans-serif;
+}
+
+/*------RESPONSIVITY-------*/
+
+@media screen and (max-width: 1150px) {
+    .fatherClosed {
+        display: block;
+    }
+}
