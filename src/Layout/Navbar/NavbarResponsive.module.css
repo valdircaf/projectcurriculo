@@ -12,7 +12,6 @@
     width: 0;
     background-color: #121212;
     position: absolute;
-    transition: .2s linear;
     display: none;
 }
 
@@ -73,7 +72,7 @@
     height: 100%;
     z-index: 4;
     font-family: 'Nostromo Medium', sans-serif;
-    transition: .3s;
+    transition: .3s linear;
 }
 
 .menuOpen{
@@ -81,7 +80,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 90%;
     height: 100%;
 }
 
