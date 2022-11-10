@@ -115,10 +115,6 @@ span{
         height: 100%;
     }
 
-    .father h2{
-        margin-top: 5em;
-    }
-
     .icons{
         flex-direction: column;
     }

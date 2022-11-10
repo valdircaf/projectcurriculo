@@ -26,7 +26,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 61.2em;
+    height: 100vh;
 }
 
 .father div {
@@ -37,7 +37,7 @@
 
 .father img {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
 }
 
