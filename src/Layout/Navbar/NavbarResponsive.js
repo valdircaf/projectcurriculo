@@ -43,20 +43,20 @@ function NavbarResponsive() {
                 className={active
                     ? styles.menuOpen
                     : styles.options}>
-                <li>
-                    <Link to='/' onClick={active}>Início</Link>
+                <li onClick={active}>
+                    <Link to='/'>Início</Link>
 
                 </li>
-                <li>
-                    <Link to='/projects' onClick={active}>Projetos</Link>
+                <li onClick={active}>
+                    <Link to='/projects' >Projetos</Link>
 
                 </li>
-                <li>
-                    <Link to='/about' onClick={active}>Sobre Mim</Link>
+                <li onClick={active}>
+                    <Link to='/about'>Sobre Mim</Link>
 
                 </li>
-                <li>
-                    <Link to='/skills' onClick={active}>Habilidades</Link>
+                <li onClick={active}>
+                    <Link to='/skills'>Habilidades</Link>
 
                 </li>
             </ul>
