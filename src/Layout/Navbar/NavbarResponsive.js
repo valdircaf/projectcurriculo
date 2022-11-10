@@ -2,12 +2,15 @@ import {Link} from 'react-router-dom'
 import styles from './NavbarResponsive.module.css'
 import {useState} from 'react'
 import {BiMenu} from 'react-icons/bi'
+import {VscClose} from 'react-icons/vsc'
 
 function NavbarResponsive() {
     //State para o button
+    const [closed, setClosed] = useState(true)
     const [active, setActive] = useState(false);
     const toggleMode = () => {
         setActive(!active)
+        setClosed(!closed)
     }
 
     return (
@@ -21,8 +24,12 @@ function NavbarResponsive() {
                     : styles.menu}
                 onClick={toggleMode}>
 
-                <li>
+                <li className={!active ? styles.show : styles.close}>
                     <BiMenu/>
+                </li>
+
+                <li className={active ? styles.showX : styles.close}>
+                    <VscClose/>
                 </li>
             </ul>
 

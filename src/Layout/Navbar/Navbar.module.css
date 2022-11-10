@@ -5,7 +5,7 @@
     width: 25em;
     font-family: 'Poppins', sans-serif;
     border: 1px solid rgba(0, 0, 0, .3);
-    height: 61.2em;
+    min-height: 100vh;
 }
 
 /*----IMAGE----*/

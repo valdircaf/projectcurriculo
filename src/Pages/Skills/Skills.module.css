@@ -1,185 +1,135 @@
-/*-----------IMPORT FONTS-----------------*/
-
 @font-face {
-    font-family: 'Nostromo Regular';
-    src: url("../../Fonts/NostromoRegular-Heavy.otf");
-}
-
-@font-face {
-    font-family: 'Nostromo Bold';
+    font-family: 'Nostromo Bold', sans-serif;
     src: url("../../Fonts/NostromoRegular-Bold.otf");
 }
 
 @font-face {
-    font-family: 'Nostromo Medium';
+    font-family: 'Nostromo Medium', sans-serif;
     src: url("../../Fonts/NostromoRegular-Medium.otf");
 }
 
-@font-face {
-    font-family: 'Nostromo Heavy';
-    src: url("../../Fonts/NostromoRegular-Heavy.otf");
+.father {
+    font-family: 'Nostromo Medium', sans-serif;
+    width: 100%;
+    background-color: #121212;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100%;
 }
 
-/*-----------ROOT ELEMENTS-----------------*/
-
-.father {
-    background: #121212;
+.icons {
     width: 100%;
-    color: #FFF;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    height: 61.2em;
 }
 
 .father h2 {
-    font-family: 'Nostromo Heavy', sans-serif;
-    font-size: 2em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     color: #00f475;
-    margin-top: 5em;
-
+    font-size: 2em;
+    font-family: 'Nostromo Bold', sans-serif;
 }
 
-.father p {
-    font-family: 'Nostromo Medium', sans-serif;
-
+.firstP {
+    margin-bottom: 4em;
 }
 
-/*-----------ICONS-----------------*/
-
-.icons {
-    margin-top: 1em;
-
-}
-
-.icons .react {
-    color: aqua;
-}
-
-.icons .js {
-    color: yellow;
-}
-
-.icons .css {
-    color: blue;
-}
-
-.icons .html {
-    color: red;
-}
-
-.icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.iconsList svg {
-    font-size: 3em;
-    width: 70%;
-}
-
-.iconsList .js,
-.react {
-    margin-right: 1.2em;
-}
-
+.css,
 .html,
-.iconsList .css {
-    margin-right: 0.6em;
+.js,
+.react {
+    font-size: 3em;
+    margin-bottom: 1em;
 }
 
-.iconsList {
-    margin-top: 3em;
-}
-
-.iconsList svg:hover {
-    opacity: 0.3;
+.react {
+    color: aqua;
     cursor: pointer;
 }
 
-/*------------TEXTS---------------*/
+.js {
+    color: yellow;
+    cursor: pointer;
 
-.iconsList p {
-    width: 80%;
-    margin-top: 2em;
-    opacity: 0.1;
-    transition: opacity 0.3s;
-    margin-left: 1em;
 }
 
-.iconsList span {
+.html {
+    color: red;
+    cursor: pointer;
+
+}
+
+.css {
+    color: blue;
+    cursor: pointer;
+}
+
+.icons p {
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+.react:hover ~ p {
+    opacity: 1;
+
+}
+
+.js:hover ~ p {
+    opacity: 1;
+
+}
+
+.css:hover ~ p {
+    opacity: 1;
+
+}
+
+.html:hover ~ p {
+    opacity: 1;
+
+}
+
+span{
     color: #00f475;
-    font-size: 0.8em;
 }
 
-.react:hover ~ div p {
-    opacity: 1;
-}
-
-.css:hover ~ div p {
-    opacity: 1;
-}
-
-.html:hover ~ div p {
-    opacity: 1;
-}
-
-.js:hover ~ div p {
-    opacity: 1;
-}
-
-/*------------RESPONSIVITY---------------*/
-
-@media screen and (max-width : 564px) {
-    .iconsList p {
-        width: 10em;
-        opacity: 1;
+@media screen and (max-width: 1150px){
+    .father{
+        height: 100vh;
     }
 
-    .father h2 {
+    .firstP{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .father{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .father h2{
         margin-top: 5em;
     }
 
-    .father {
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-    }
-
-    .firstP {
-        display: none;
-    }
-
-    .icons {
-        display: flex;
+    .icons{
         flex-direction: column;
     }
 
-    .icons svg {
-        margin-left: 0.7em;
-    }
-}
-
-@media screen and (max-width : 1140px) {
-    .iconsList p {
-        width: 10em;
+    .icons p{
+        margin-bottom: 3em;
+        opacity: 1;
     }
 
-    .father {
-        width: 65em;
-        height: 100%;
-    }
-
-    .firstP {
-        display: none;
-    }
-
-    .icons {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .icons svg {
-        margin-left: 0.7em;
+    .icons svg{
+        margin: 0;
+        margin-bottom: .5em;
     }
 }

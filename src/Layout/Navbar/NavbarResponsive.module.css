@@ -7,81 +7,96 @@
 
 /*------LAYOUT CLOSED-------*/
 
-.fatherClosed {
-    background-color: rgba(255, 255 , 255, .5);
+.fatherClosed{
     font-family: 'Nostromo Medium', sans-serif;
     width: 0;
-    display: none;
-    transition: 0.2s linear;
-    color: #121212;
-}
-
-.options li {
-
-    list-style: none;
-}
-
-.options li a {
-    text-decoration: none;
-    color: #FFF;
-}
-
-.menu {
-    font-size: 2em;
-    color: #FFF;
-}
-.menu li {
-    list-style: none;
+    background-color: #121212;
     position: absolute;
-    top: 2px;
-    left: 2px;
-    cursor: pointer;
-    transition: 0.5s linear;
+    transition: .2s linear;
+    display: none;
+}
+
+.close{
+    display: none;
+}
+
+.options{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.options li{
+    list-style: none;
+    margin-bottom: 2em;
+}
+
+.options li a{
+    text-decoration: none;
+    color: #00f475;
 }
 
 /*------LAYOUT OPEN-------*/
 
-.father {
-    background: #121212;
-    height: 100%;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    transition: 0.5s linear;
+.show{
     position: absolute;
-    width: 100%;
-}
-
-.hamburguerOpen li {
-    color: #FFF;
+    top: 2px;
+    left: 2px;
     font-size: 2em;
-    list-style: none;
-    margin-bottom: 2em;
-    margin-right: 1em;
-    transition: 0.5s linear;
+    color: #FFF;
     cursor: pointer;
 }
 
-.menuOpen li {
+.showX{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    font-size: 2em;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.showX{
+    list-style: none;
+}
+
+
+
+.father{
+    background-color: #121212;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    font-family: 'Nostromo Medium', sans-serif;
+    transition: .3s;
+}
+
+.menuOpen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.menuOpen li{
     list-style: none;
     margin-bottom: 2em;
-    margin-right: 2em;
-    transition: 0.5s linear;
-
 }
 
-.menuOpen li a {
+.menuOpen li a{
     text-decoration: none;
-    color: #FFF;
-    font-family: 'Nostromo Medium', sans-serif;
+    color: #00f475;
 }
-
-/*------RESPONSIVITY-------*/
 
 @media screen and (max-width: 1150px) {
-    .fatherClosed {
-        display: block;
+    .fatherClosed{
+        display: flex;
     }
 }
