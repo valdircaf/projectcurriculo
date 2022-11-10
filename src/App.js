@@ -19,7 +19,7 @@ function App() {
                 <NavbarResponsive/>
                 <Routes>
                     <Route path='/skills' exact="exact" element={<Skills/>}/>
-                    <Route path='/' exact="exact" element={<Home/>}/>
+                    <Route path='/' element={<Home/>}/>
                     <Route path='/projects' element={<Projects/>}/>
                     <Route path='/about' element={<About/>}/>
 
