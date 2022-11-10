@@ -17,7 +17,7 @@
 
 /*---------ROOT ELEMENTS--------------*/
 
-.father{
+.father {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,11 +31,11 @@
 
 /*---------IMAGES--------------*/
 
-.logos img{
+.logos img {
     width: 2em;
 }
 
-.paragraphs img{
+.paragraphs img {
     width: 15em;
     height: 15em;
     margin-left: 10%;
@@ -50,8 +50,7 @@
 
 /*---------LOGOS--------------*/
 
-
-.logos{
+.logos {
     margin-top: 2em;
     width: 100%;
     text-align: center;
@@ -59,7 +58,7 @@
 
 /*---------TEXTS--------------*/
 
-.paragraphs{
+.paragraphs {
     display: flex;
     width: 100%;
     text-align: center;
@@ -67,20 +66,15 @@
     justify-content: center;
 }
 
-
-
-.paragraphs p{
+.paragraphs p {
     width: 50%;
     margin-bottom: 1em;
 }
 
-
-.father h1{
+.father h1 {
     margin-bottom: 2em;
     color: #00f475;
 }
-
-
 
 /*---------ANIMATION--------------*/
 
@@ -97,30 +91,29 @@
 /*---------RESPONSIVITY--------------*/
 
 @media screen and (max-width: 1500px) {
-    .paragraphs img{
+    .paragraphs img {
         display: none;
     }
 
-    .paragraphs p{
+    .paragraphs p {
         width: 100%;
     }
 
-    .paragraphs{
+    .paragraphs {
         text-align: center;
     }
-    
+
 }
 
 @media screen and (max-width: 1150px) {
-    .father{
+    .father {
         height: 100vh;
         width: 100%;
     }
 
-    .paragraphs{
+    .paragraphs {
         height: 100%;
     }
 }
 
-@media screen and (max-width: 375px) {
-}
+@media screen and (max-width: 375px) {}

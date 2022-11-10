@@ -24,11 +24,17 @@ function NavbarResponsive() {
                     : styles.menu}
                 onClick={toggleMode}>
 
-                <li className={!active ? styles.show : styles.close}>
+                <li
+                    className={!active
+                        ? styles.show
+                        : styles.close}>
                     <BiMenu/>
                 </li>
 
-                <li className={active ? styles.showX : styles.close}>
+                <li
+                    className={active
+                        ? styles.showX
+                        : styles.close}>
                     <VscClose/>
                 </li>
             </ul>
@@ -38,19 +44,19 @@ function NavbarResponsive() {
                     ? styles.menuOpen
                     : styles.options}>
                 <li>
-                    <Link to='/'>Início</Link>
+                    <Link to='/' onClick={active}>Início</Link>
 
                 </li>
                 <li>
-                    <Link to='/projects'>Projetos</Link>
+                    <Link to='/projects' onClick={active}>Projetos</Link>
 
                 </li>
                 <li>
-                    <Link to='/about'>Sobre Mim</Link>
+                    <Link to='/about' onClick={active}>Sobre Mim</Link>
 
                 </li>
                 <li>
-                    <Link to='/skills'>Habilidades</Link>
+                    <Link to='/skills' onClick={active}>Habilidades</Link>
 
                 </li>
             </ul>

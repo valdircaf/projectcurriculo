@@ -95,37 +95,36 @@
 
 }
 
-span{
+span {
     color: #00f475;
 }
 
-@media screen and (max-width: 1150px){
-    .father{
+@media screen and (max-width: 1150px) {
+    .father {
         height: 100vh;
     }
 
-    .firstP{
+    .firstP {
         display: none;
     }
 }
 
-@media screen and (max-width: 950px){
-    .father{
+@media screen and (max-width: 950px) {
+    .father {
         flex-direction: column;
         height: 100%;
     }
 
-    .icons{
+    .icons {
         flex-direction: column;
     }
 
-    .icons p{
+    .icons p {
         margin-bottom: 3em;
         opacity: 1;
     }
 
-    .icons svg{
-        margin: 0;
-        margin-bottom: .5em;
+    .icons svg {
+        margin: 0 0 0.5em;
     }
 }

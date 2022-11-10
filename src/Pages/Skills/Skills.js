@@ -16,9 +16,9 @@ function Skills() {
             <div className={styles.icons}>
 
                 <div className={styles.iconsList}>
-                    
+
                     <div>
-                    <FaReact className={styles.react}/>
+                        <FaReact className={styles.react}/>
                         <p>React
                             <br/>
                             <br/>O React é uma biblioteca front-end JavaScript de código aberto com foco em
@@ -33,9 +33,9 @@ function Skills() {
                     </div>
                 </div>
                 <div className={styles.iconsList}>
-                    
+
                     <div>
-                    <SiJavascript className={styles.js}/>
+                        <SiJavascript className={styles.js}/>
                         <p>JavaScript
                             <br/>
                             <br/>
@@ -52,9 +52,9 @@ function Skills() {
 
                 </div>
                 <div className={styles.iconsList}>
-                    
+
                     <div>
-                    <FaCss3Alt className={styles.css}/>
+                        <FaCss3Alt className={styles.css}/>
                         <p>CSS
                             <br/>
                             <br/>
@@ -69,9 +69,9 @@ function Skills() {
 
                 </div>
                 <div className={styles.iconsList}>
-                    
+
                     <div>
-                    <AiFillHtml5 className={styles.html}/>
+                        <AiFillHtml5 className={styles.html}/>
                         <p>HTML
                             <br/>
                             <br/>
