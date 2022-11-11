@@ -94,6 +94,10 @@
     .father button {
         font-size: 0.8em;
     }
+
+    .father{
+        overflow: hidden;
+    }
 }
 
 @media screen and (max-height: 1000px) {
