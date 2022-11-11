@@ -41,6 +41,9 @@
     margin-bottom: 2em;
     color: #00f475;
     font-family: 'Nostromo Heavy';
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
 
 }
 
@@ -115,5 +118,9 @@
         position: relative;
         top: 65px;
 
+    }
+
+    h1{
+        text-align: center;
     }
 }
